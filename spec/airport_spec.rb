@@ -5,7 +5,8 @@ describe Airport do
     expect(subject).to respond_to :land
   end
   it 'lands a plane' do
-    expect(subject.land).to eq true
+    plane = Plane.new
+    expect(subject.land(plane)).to eq [plane]
   end
   it 'stores planes' do
     airport = Airport.new

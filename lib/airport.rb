@@ -1,3 +1,6 @@
+require './lib/plane'
+
+
 class Airport
 
 attr_reader :hangar
@@ -6,8 +9,8 @@ attr_reader :hangar
     @hangar = []
   end
 
-  def land
-    true
+  def land(plane)
+    @hangar.push(plane)
   end
 
   def get_hangar
