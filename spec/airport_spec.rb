@@ -12,4 +12,9 @@ describe Airport do
     airport = Airport.new
     expect(subject.get_hangar).to eq []
   end
+  it 'initiate a take off of the plane' do
+    plane = Plane.new
+    subject.land(plane)
+    expect(subject.take_off(plane)).to eq []
+  end
 end
