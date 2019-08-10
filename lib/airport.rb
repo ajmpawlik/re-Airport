@@ -1,9 +1,8 @@
 require './lib/plane'
 
-
 class Airport
 
-attr_reader :hangar
+  attr_reader :hangar
 
   def initialize
     @hangar = []
@@ -13,7 +12,7 @@ attr_reader :hangar
     @hangar.push(plane)
   end
 
-  def get_hangar
+  def see_hangar
     @hangar
   end
 end

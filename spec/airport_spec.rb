@@ -9,8 +9,7 @@ describe Airport do
     expect(subject.land(plane)).to eq [plane]
   end
   it 'stores planes' do
-    airport = Airport.new
-    expect(subject.get_hangar).to eq []
+    expect(subject.see_hangar).to eq []
   end
   it 'initiate a take off of the plane' do
     plane = Plane.new
