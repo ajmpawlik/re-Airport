@@ -15,4 +15,14 @@ class Airport
   def see_hangar
     @hangar
   end
+
+  def take_off(plane)
+    hangar_after = @hangar.pop
+  end
+
+  # def taken_off?
+  #  if  @hangar.length > @hangar.take_off(plane).length
+  #     true
+  #   end
+  # end
 end

@@ -16,4 +16,8 @@ describe Airport do
     subject.land(plane)
     expect(subject.take_off(plane)).to eq []
   end
+  # it 'checks if the plane has taken off' do
+  #   plane = Plane.new
+  #   expect(subject.taken_off?(plane)).to eq true
+  # end
 end
